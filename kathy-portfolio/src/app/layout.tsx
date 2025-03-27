@@ -1,33 +1,48 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Press_Start_2P } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const pixelFont = Press_Start_2P({ 
+  weight: '400',
+  subsets: ['latin'],
+});
 
 export const metadata: Metadata = {
-  title: "Kathy's Portfolio",
-  description: "A pixel art themed portfolio showcasing IT expertise",
+  title: "Kathy Portfolio",
+  description: "Welcome to my pixel art portfolio!",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-gradient-to-b from-gray-100 to-gray-200 min-h-screen`}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <header className="mb-8">
-            <nav className="flex justify-between items-center pixel-border bg-white p-4">
-              <h1 className="text-2xl font-bold pixel-font">Kathy&apos;s Portfolio</h1>
-            </nav>
-          </header>
-          <main>{children}</main>
-          <footer className="mt-8 pixel-border bg-white p-4 text-center">
-            <p className="pixel-font text-sm">© 2024 Kathy&apos;s Portfolio. All rights reserved.</p>
-          </footer>
-        </div>
+      <body className={pixelFont.className}>
+        <div className="forest-background" />
+        <header className="header fixed top-0 left-0 right-0 z-50">
+          <nav className="container mx-auto">
+            <div className="flex flex-col items-center">
+              <h1 className="header-title" data-text="Kathy Portfolio">Kathy Portfolio</h1>
+            </div>
+          </nav>
+        </header>
+        <main className="container mx-auto px-4 pt-32 pb-16">
+          {children}
+        </main>
+        <footer className="footer">
+          <div className="container mx-auto">
+            <div className="footer-content flex flex-col items-center space-y-4">
+              <p>© 2024 Kathy Portfolio. All rights reserved.</p>
+              <div className="flex flex-wrap justify-center gap-4">
+                <a href="https://github.com/yourusername" className="nav-link">GitHub</a>
+                <a href="https://linkedin.com/in/yourusername" className="nav-link">LinkedIn</a>
+                <a href="mailto:your.email@example.com" className="nav-link">Email</a>
+              </div>
+            </div>
+          </div>
+        </footer>
       </body>
     </html>
   );

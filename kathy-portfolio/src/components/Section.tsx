@@ -12,7 +12,7 @@ interface SectionProps {
 
 export default function Section({ id, title, children, className = '' }: SectionProps) {
   const [ref, inView] = useInView({
-    triggerOnce: true,
+    triggerOnce: false,
     threshold: 0.1,
   });
 
@@ -24,7 +24,15 @@ export default function Section({ id, title, children, className = '' }: Section
         transition={{ duration: 0.5 }}
         className="pixel-card"
       >
-        <h2 className="section-title text-3xl font-bold pixel-font">{title}</h2>
+        <motion.h2
+          key={id}
+          initial={{ opacity: 0, y: -20 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="section-title text-3xl font-bold pixel-font"
+        >
+          {title}
+        </motion.h2>
         {children}
       </motion.div>
     </section>

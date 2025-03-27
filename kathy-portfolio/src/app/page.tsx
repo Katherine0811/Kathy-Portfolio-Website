@@ -151,7 +151,7 @@ export default function Home() {
               <div className="relative h-64 md:h-96">
                 <div className="absolute inset-0 bg-gradient-to-br from-[var(--primary)] to-[var(--secondary)] opacity-20" />
                 <div className="absolute inset-0 pixel-border flex items-center justify-center">
-                  <p className="pixel-font text-center text-2xl">Your Pixel Art Avatar Here</p>
+                  {/* <p className="pixel-font text-center text-2xl">Your Pixel Art Avatar Here</p> */}
                 </div>
               </div>
             </div>
