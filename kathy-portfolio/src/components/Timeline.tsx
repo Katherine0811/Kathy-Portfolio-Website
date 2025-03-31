@@ -21,9 +21,6 @@ export default function Timeline({ items}: TimelineProps) {
         {items.map((item, index) => (
           <motion.div
             key={index}
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, delay: index * 0.1 }}
             className="pixel-card relative pl-12"
           >
             <div className="absolute left-0 w-8 h-8 bg-[var(--primary)] rounded-full border-4 border-[var(--text)]" />

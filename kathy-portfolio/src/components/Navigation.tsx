@@ -5,6 +5,7 @@ interface NavigationProps {
   activeSection: string;
 }
 
+// Navigation Component
 export default function Navigation({ onSectionChange, activeSection }: NavigationProps) {
   const menuItems = [
     { id: 'home', label: 'Home' },

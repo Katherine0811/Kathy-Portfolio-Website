@@ -12,61 +12,93 @@ export default function Home() {
   const [activeSection, setActiveSection] = useState('home');
   const experience = [
     {
-      period: '24 - Present',
-      title: 'Senior Software Engineer',
-      organization: 'Tech Company',
+      period: 'August 2024 - Present',
+      title: 'Technical Lead (Graduate Trainee)',
+      organization: 'Vodafone Ltd, Ireland',
       description: [
-        'Led development of multiple full-stack applications',
-        'Implemented scalable architecture solutions',
-        'Mentored junior developers and conducted code reviews',
+        'Optimized network infrastructure by streamlining IP documentation, security zone configuration, and firewall rule approvals, ensuring compliance with security policies',
+        'Automated network operations workflows, such as WOW Tickets & Firewall Comms Tracker, enhancing project visibility and cutting manual tracking efforts by 50% through scripting and process improvements',
+        'Developed a Tech Lead Dashboard, integrating real-time monitoring and reporting to enhance network visibility and decision-making efficiency',
+        'Collaborated with cross-functional teams (Amdocs, security, and cloud engineers) to design and deploy scalable enterprise connectivity solutions',
+        'Created a Tech Lead Welcome Pack on Confluence, streamlining onboarding and training for new team members, reducing coaching effort by 80%',
       ],
     },
-    // Add more experience items here
+    {
+      period: 'October 2022 - August 2023',
+      title: 'Full Stack Software Engineer (Intern)',
+      organization: 'Theta Service Partner, Malaysia',
+      description: [
+        'Developed and deployed RESTful APIs, integrating authentication, data validation, and business logic for a Loan Origination System',
+        'Worked with cloud infrastructure, assisting in deploying applications on AWS EC2, RDS, and S3, improving system scalability and reliability',
+        'Implemented logging and monitoring using Postman, SonarQube, and AWS CloudWatch, improving debugging efficiency by 30%',
+        'Configured CI/CD pipelines with GitHub Actions, automating code deployment and reducing manual intervention',
+        'Built a Single-Page Application (SPA) using Angular & TypeScript, enhancing frontend performance and user experience',
+        'Led API documentation efforts and created a REST API training course on Theta’s Learning Platform, improving onboarding efficiency for junior developers',
+      ],
+    },
   ];
 
   const education = [
     {
-      period: '2015 - 2019',
-      title: 'Bachelor of Computer Science',
-      organization: 'University Name',
+      period: 'September 2023 - August 2024',
+      title: 'Master of Science in Software Design with Cloud Native Computing',
+      organization: 'Technology University of the Shannon: Midlands, Ireland',
       description: [
         'Graduated with First Class Honours',
-        'Specialized in Software Engineering',
-        'Led multiple student projects',
+        'Stage GPA: 77.08%',
       ],
     },
-    // Add more education items here
+    {
+      period: 'June 2020 - May 2023',
+      title: 'Bachelor of Computer Science (Honours) in Software Engineering',
+      organization: 'Tunku Abdul Rahman University of Management and Technology, Malaysia',
+      description: [
+        'Graduated with First Class Honours',
+        'CGPA: 3.9',
+        'TAR UMT Merit Full Scholarship Holder',
+      ],
+    },
+        {
+      period: 'May 2019 - June 2020',
+      title: 'Foundation in Science',
+      organization: 'Technology University of the Shannon: Midlands, Ireland',
+      description: [
+        'Graduated with First Class Honours',
+        'CGPA: 3.9',
+        'TAR UMT Merit Full Scholarship Holder',
+      ],
+    },
   ];
   
   const skills = [
     {
       category: 'Programming Languages',
       skills: [
-        { name: 'Python', level: 90, icon: '🐍' },
-        { name: 'Java', level: 85, icon: '☕' },
-        { name: 'TypeScript', level: 85, icon: '📘' },
-        { name: 'JavaScript', level: 90, icon: '⚡' },
+        { name: 'Python', level: 70, icon: '🐍' },
+        { name: 'Java', level: 80, icon: '☕' },
+        { name: 'TypeScript', level: 90, icon: '📘' },
+        { name: 'JavaScript', level: 65, icon: '⚡' },
         { name: 'HTML', level: 90, icon: '🌐' },
-        { name: 'CSS', level: 85, icon: '🎨' },
+        { name: 'CSS', level: 55, icon: '🎨' },
       ],
     },
     {
       category: 'Databases & Frameworks',
       skills: [
-        { name: 'MySQL', level: 85, icon: '🗄️' },
+        { name: 'MySQL', level: 90, icon: '🗄️' },
         { name: 'PostgreSQL', level: 80, icon: '🐘' },
-        { name: 'Angular', level: 85, icon: '🅰️' },
-        { name: 'Spring Boot', level: 80, icon: '🍃' },
+        { name: 'Angular', level: 90, icon: '🅰️' },
+        { name: 'Spring Boot', level: 90, icon: '🍃' },
       ],
     },
     {
       category: 'Cloud & DevOps',
       skills: [
-        { name: 'AWS', level: 80, icon: '☁️' },
-        { name: 'Docker', level: 75, icon: '🐳' },
-        { name: 'Kubernetes', level: 70, icon: '⚓' },
-        { name: 'Jenkins', level: 75, icon: '🤖' },
-        { name: 'GitHub', level: 90, icon: '🐙' },
+        { name: 'AWS', level: 90, icon: '☁️' },
+        { name: 'Docker', level: 70, icon: '🐳' },
+        { name: 'Kubernetes', level: 60, icon: '⚓' },
+        { name: 'Jenkins', level: 65, icon: '🤖' },
+        { name: 'GitHub', level: 85, icon: '🐙' },
       ],
     },
     {
@@ -82,17 +114,17 @@ export default function Home() {
       category: 'Methodologies',
       skills: [
         { name: 'Agile', level: 90, icon: '🔄' },
-        { name: 'Scrum', level: 90, icon: '📊' },
+        { name: 'Scrum', level: 80, icon: '📊' },
         { name: 'Kanban', level: 85, icon: '📋' },
       ],
     },
     {
       category: 'Tools & Collaboration',
       skills: [
-        { name: 'JIRA', level: 90, icon: '📌' },
-        { name: 'Confluence', level: 85, icon: '📝' },
-        { name: 'Swagger', level: 85, icon: '📚' },
-        { name: 'Visual Paradigm', level: 80, icon: '📐' },
+        { name: 'JIRA', level: 95, icon: '📌' },
+        { name: 'Confluence', level: 95, icon: '📝' },
+        { name: 'Swagger', level: 80, icon: '📚' },
+        { name: 'Visual Paradigm', level: 70, icon: '📐' },
         { name: 'MS Office', level: 90, icon: '📎' },
       ],
     },
@@ -101,7 +133,7 @@ export default function Home() {
       skills: [
         { name: 'English', level: 90, icon: '①' },
         { name: 'Chinese', level: 90, icon: '②' },
-        { name: 'Malay', level: 85, icon: '③' },
+        { name: 'Malay', level: 80, icon: '③' },
       ],
     },
   ];
@@ -137,7 +169,7 @@ export default function Home() {
           <section className="pixel-card relative overflow-hidden">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               <div className="space-y-6">
-                <h2 className="text-5xl font-bold pixel-font text-[var(--primary)]">Welcome to My Pixel World!</h2>
+                <h2 className="section-title ">Welcome to My Pixel World!</h2>
                 <p className="text-xl leading-relaxed">
                   I&apos;m a passionate IT professional who loves creating beautiful and functional applications
                   with a touch of pixel art magic. My journey in tech is like an adventure game - full of

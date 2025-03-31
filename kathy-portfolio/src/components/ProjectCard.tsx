@@ -50,7 +50,7 @@ export default function ProjectCard({
             href={link}
             target="_blank"
             rel="noopener noreferrer"
-            className="pixel-button inline-block"
+            className="pixel-button"
           >
             View Project
           </a>

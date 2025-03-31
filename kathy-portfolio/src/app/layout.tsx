@@ -1,10 +1,15 @@
 import type { Metadata } from "next";
-import { Press_Start_2P } from "next/font/google";
+import { Press_Start_2P, Inter } from "next/font/google";
 import "./globals.css";
 
 const pixelFont = Press_Start_2P({ 
   weight: '400',
   subsets: ['latin'],
+});
+
+const interFont = Inter({
+  subsets: ['latin'],
+  display: 'swap',
 });
 
 export const metadata: Metadata = {
@@ -19,7 +24,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={pixelFont.className}>
+      <body className={`${interFont.className} ${pixelFont.className}`}>
         <div className="forest-background" />
         <header className="header fixed top-0 left-0 right-0 z-50">
           <nav className="container mx-auto">
@@ -36,9 +41,9 @@ export default function RootLayout({
             <div className="footer-content flex flex-col items-center space-y-4">
               <p>© 2024 Kathy Portfolio. All rights reserved.</p>
               <div className="flex flex-wrap justify-center gap-4">
-                <a href="https://github.com/yourusername" className="nav-link">GitHub</a>
-                <a href="https://linkedin.com/in/yourusername" className="nav-link">LinkedIn</a>
-                <a href="mailto:your.email@example.com" className="nav-link">Email</a>
+                <a href="https://github.com/Katherine0811" className="nav-link">GitHub</a>
+                <a href="https://www.linkedin.com/in/yan-jie-lee-073b72240/" className="nav-link">LinkedIn</a>
+                <a href="mailto:katherine.lee0356@gmail.com" className="nav-link">Email</a>
               </div>
             </div>
           </div>
